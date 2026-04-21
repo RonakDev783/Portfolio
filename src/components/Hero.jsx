@@ -1,6 +1,6 @@
 import instagram from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
-import github from '../assets/github.png'
+import github from '../assets/Github.png'
 import CV from '../assets/CV.pdf'
 import hero from '../assets/hero.png'
 import hi from '../assets/hi.png'
