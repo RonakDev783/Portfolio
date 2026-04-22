@@ -78,7 +78,7 @@ const Skills = ({darkMode}) => {
             color: darkMode ? "#d1d5db" : "#4b5563"
           }}
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+          I build modern, responsive, and scalable web applications using the latest technologies and tools.
         </p>
       </div>
 

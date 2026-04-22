@@ -1,6 +1,29 @@
 import contactImg from '../assets/contact.png'
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
 
 const Contact = ({ darkMode }) => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_pq3tyic',
+      'template_7ca5hho',
+      form.current,
+      '0ecgf5qlnNOdddf_2'
+    )
+    .then(() => {
+      alert("Message sent successfully ✅");
+      form.current.reset();
+    })
+    .catch(() => {
+      alert("Failed to send message ❌");
+    });
+  };
+
   return (
     <section
       id="contact"
@@ -51,7 +74,10 @@ const Contact = ({ darkMode }) => {
             />
           </div>
 
+          {/* 🔥 FORM UPDATED */}
           <form
+            ref={form}
+            onSubmit={sendEmail}
             style={{
               background: darkMode
                 ? 'linear-gradient(to right, #1f2937, #111827)'
@@ -62,8 +88,10 @@ const Contact = ({ darkMode }) => {
             data-aos="fade-left"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              
               {/* First Name */}
               <input
+                name="first_name"
                 type="text"
                 placeholder="First Name"
                 style={{
@@ -77,6 +105,7 @@ const Contact = ({ darkMode }) => {
 
               {/* Last Name */}
               <input
+                name="last_name"
                 type="text"
                 placeholder="Last Name"
                 style={{
@@ -91,6 +120,7 @@ const Contact = ({ darkMode }) => {
 
             {/* Email Address */}
             <input
+              name="email"
               type="email"
               placeholder='Email Address'
               style={{
@@ -104,6 +134,7 @@ const Contact = ({ darkMode }) => {
 
             {/* Phone Number */}
             <input
+              name="phone"
               type="tel"
               placeholder='Phone Number'
               style={{
@@ -117,6 +148,7 @@ const Contact = ({ darkMode }) => {
 
             {/* Message */}
             <textarea
+              name="message"
               rows="4"
               placeholder="Your Message"
               style={{

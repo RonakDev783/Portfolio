@@ -24,7 +24,7 @@ const Footer = ({ darkMode }) => {
               className="text-sm"
               style={{ color: darkMode ? '#9ca3af' : '#6b7280' }}
             >
-              Full Stack Developer & UI/UX Designer
+              Full Stack Developer & Freelancer
             </p>
           </div>
 
@@ -32,7 +32,9 @@ const Footer = ({ darkMode }) => {
           <div className="flex gap-4">
             {/* Github */}
             <a
-              href="#"
+              href="https://github.com/RonakDev783"
+              target='_blank'
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaGithub />
@@ -40,15 +42,19 @@ const Footer = ({ darkMode }) => {
 
             {/* LinkedIn */}
             <a
-              href="#"
+              href="https://www.linkedin.com/in/ronak-sharma-02935833a/"
+              target='_blank'
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaLinkedin />
             </a>
 
-            {/* Instagram (Replaced Twitter) */}
+            {/* Instagram*/}
             <a
-              href="#"
+              href="https://www.instagram.com/__ronaksharma21/"
+              target='_blank'
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaInstagram />
@@ -57,9 +63,9 @@ const Footer = ({ darkMode }) => {
 
           <div className="text-center md:text-right">
             <p className="text-sm flex items-center justify-end gap-1 text-[#6b7280] dark:text-[#9ca3af]">
-              @ {currentYear} Made with 
+              @ {currentYear} Website developed
               <FaHeart className="text-red-500" /> 
-              by <span className="mt-1 text-[#f97316]">Ronak Sharma</span>
+              designed by <span className="mt-1 text-[#f97316]">Ronak Sharma</span>
             </p>
           </div>
 

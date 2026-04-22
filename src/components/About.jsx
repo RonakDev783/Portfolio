@@ -83,7 +83,7 @@ const About = ({ darkMode }) => {
                             lg:text-4xl font-bold text-orange-400'>2+</div>
                             <div className={`text-xs sm:text-sm lg:text-base
                                 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                                Years Experience
+                                Years of Experience
                             </div>
 
                         </div>
@@ -94,7 +94,7 @@ const About = ({ darkMode }) => {
                             data-aos='zoom-in'
                             data-aos-delay='700'>
                             <div className='text-2xl sm:text-3xl
-                            lg:text-4xl font-bold text-orange-400'>7+</div>
+                            lg:text-4xl font-bold text-orange-400'>10+</div>
                             <div className={`text-xs sm:text-sm lg:text-base
                                 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                                 Project Completed
@@ -103,19 +103,21 @@ const About = ({ darkMode }) => {
                         </div>
                     </div>
 
-                    <button className={`w-full sm:w-auto  border-2
-                border-orange-500 inline-flex items-center 
-                justify-center py-2 px-4 sm:px-6 
-                hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-                rounded-full text-base sm:text-lg font-semibold 
-                transition-all duration-300 transform
-                ${darkMode
-                            ? 'text-white bg-orange-500/10'
-                            : 'text-gray-800 bg-white/90'}`}
-                        data-aos='fade-up'
-                        data-aos-delay='800'>
-                        Learn More
-                    </button>
+                    <a
+                       href="#home"
+                       className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center 
+                       justify-center py-2 px-4 sm:px-6 
+                       hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
+                       rounded-full text-base sm:text-lg font-semibold 
+                       transition-all duration-300 transform
+                       ${darkMode
+                         ? 'text-white bg-orange-500/10'
+                         : 'text-gray-800 bg-white/90'}`}
+                       data-aos='fade-up'
+                       data-aos-delay='800'
+                     >
+                       Learn More
+                     </a>
                 </article>
             </div>
         </section>
