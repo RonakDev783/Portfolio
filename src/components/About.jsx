@@ -1,5 +1,5 @@
 
-import about from '../assets/About.png'
+// import about from '../assets/About.png'
 const About = ({ darkMode }) => {
     return (
         <section id="about" className={`min-h-screen overflow-hidden flex
@@ -23,7 +23,7 @@ const About = ({ darkMode }) => {
                             data-aos-delay='600'>
                         </div>
                         <img
-                            src={about}
+                            src="https://res.cloudinary.com/dhovcmjae/image/upload/f_auto,q_auto/v1777022191/About_nczer6.png"
                             alt="About Image"
                             className='absolute inset-0 w-full h-full
             object-cover z-10 transition-all duration-300'

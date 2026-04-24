@@ -2,7 +2,7 @@ import instagram from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/Github.png'
 import CV from '../assets/CV.pdf'
-import hero from '../assets/hero.png'
+// import hero from '../assets/hero.png'
 import hi from '../assets/hi.png'
 import { DownloadIcon, Mail } from 'lucide-react'
 const Hero = ({ darkMode }) => {
@@ -116,12 +116,12 @@ const Hero = ({ darkMode }) => {
             <div className='relative w-4/5 sm:w-3/4 lg:w-full'>
               <div className='relative overflow-hidden'>
                 <img
-                  src={hero}
+                  src="https://res.cloudinary.com/dhovcmjae/image/upload/f_auto,q_auto/v1777022215/hero_ey4bcz.png"
                   alt="Hero Image"
                   className='w-full h-auto object-cover transform
                 hover:scale-105 transition-transform duration-500' />
               </div>
-              <img src={hi} alt="Hi icon"
+              <img src="https://res.cloudinary.com/dhovcmjae/image/upload/f_auto,q_auto/v1777022205/hi_dj6ajp.png" alt="Hi icon"
                 className='absolute -top-4 sm:top-4 left-6
             sm:left-20 w-14 h-14 sm:w-20 object-contain
             animate-bounce opacity-90 z-10'/>
